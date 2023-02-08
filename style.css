@@ -9,7 +9,7 @@ body{
   font-family: Arial;
 }
 header{
-  background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('/img/imgbackgroundhead.jpg');
+  background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('imgbackgroundhead.jpg');
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 100%;
@@ -284,7 +284,7 @@ header nav .nav-items{
 }
 
 .about-img{
-  background-image: url('/img/about-img.jpg');
+  background-image: url('about-img.jpg');
   height: 400px;
   max-width: 100%;
   background-position: center;
