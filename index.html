@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>harsh portfolio</title>
+    
+ <!--    css links -->
+<style type="text/css" media="all">
+*{
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #191919;
+  font-family: Arial;
+}
+header{
+  background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('imgbackgroundhead.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}  
+nav{
+  width: 100%;
+}
+
+header nav .nav-main-div{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background:#000000;
+  z-index: 999;
+  padding: 15px 15%;
+  flex-wrap: wrap;
+  opacity: 0.9;
+}
+header nav .nav-main-div .left-nav h1{
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 1000px;
+}
+.openMenu{
+  border-radius: 3px;
+  padding: 4px 0px;
+}
+.close-menu-items{
+  background: #ffffff;  
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  display: none;
+  opacity: 0;
+}
+header nav .nav-main-div .right-nav .open-menu-items{
+  background: #fff;
+  height: 2px;
+  width: 18px;
+  margin: 3.5px 10px;
+  border-radius: 2px;
+}
+.menu-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  z-index: 999;
+}
+header nav .nav-items{  
+  background: #101010;
+  text-align: center;
+  width: 70%;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  top: 70px;
+}
+.nav-items ul li{
+  list-style: none;    
+  margin: 30px 0px;
+}
+.nav-items ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-items ul li a:hover{
+  color: #cc8a00;
+}
+
+.main-div h1{
+  font-size: 55px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  padding: 10px 20px;
+}
+
+.main-div{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-div h2{
+  color: #ffffff;
+  font-size: 2em;
+  letter-spacing: 3px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 800;
+  margin-top: 20px;
+  text-shadow: 1px 1px 1px rgb(0,0,0);
+  text-transform: capitalize;
+}
+
+.main-div h2 span{
+  color: rgb(239,202,145);
+}
+
+.btn-div{
+  margin-top: 80px;
+}
+
+.main-div a:first-child{
+  padding: 10px 30px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+  text-transform: capitalize;
+  font-family: Arial;
+  text-shadow: 1px 1px 1px rgb(0,0,0);
+}
+
+.main-div a:first-child:hover{
+  color: #ffffff;
+  background: #be9451;
+  border: none;
+  text-shadow: 0px 0px 0px ;
+}
+
+.main-div a:last-child{
+  background: #ffffff;
+  color: #be9451;
+  font-size: 15px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  text-transform: capitalize;
+  font-family: Arial;
+}
+
+.main-div a:last-child:hover{
+  color: #ffffff;
+  background: #be9451;
+  border: none;
+}
+
+
+
+
+
+/*         section one start     */
+.section-one{
+  margin-top: 100px;
+}
+
+.section-one:hover .sec-one-heading{
+  color: #151515;
+  text-shadow: 0px 0px 2px #656565;
+}
+
+.section-one .animated-line{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: left;
+  flex-direction: column;
+  padding: 15%;
+}
+
+.section-one .sec-heading, .sec-heading{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.7em;
+  color: #2f2f2f;
+  letter-spacing: 3px;
+  transition: 0.3s ease-in-out;
+}
+
+.section-one .sec-heading:hover{
+  color: #151515;
+  text-shadow: 0px 0px 1px #656565;
+}
+
+.section-one .animated-line p{
+  color: #fff;
+  font-size: 15px;
+  margin: 15px 5px 5px 5px;
+  text-transform: capitalize;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.section-one .animated-line .web-development{
+  width: 100%;
+  height: 8px;
+  background: #2f2f2f;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.section-one .animated-line .branding{
+  width: 100%;
+  height: 8px;
+  background: #2f2f2f;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.section-one .animated-line .web-designing{
+  width: 100%;
+  height: 8px;
+  background: #2f2f2f;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.section-one .animated-line .web-development:before{
+  content: "";
+  position: absolute;
+  background: rgb(218,179,123);
+  width: 60%;
+  height: 8px;
+  transform-origin: left;
+  animation: animate 8s ease-in-out;
+  border-radius: 10px;
+}
+
+.section-one .animated-line .branding:before{
+  content: "";
+  position: absolute;
+  background: rgb(218,179,123);
+  width: 50%;
+  height: 8px;
+  transform-origin: left;
+  animation: animate 8s ease-in-out;
+  border-radius: 10px;
+}
+
+.section-one .animated-line .web-designing:before{
+  content: "";
+  position: absolute;
+  background: rgb(218,179,123);
+  width: 55%;
+  height: 8px;
+  transform-origin: left;
+  animation: animate 8s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes animate{
+  0%,20%{
+    transform: scaleX(0);
+  }
+  40%{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  40.000001%,60%{
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+}
+
+.about-div{
+  padding: 0% 10%;
+  margin-bottom: 100px;
+}
+
+.about-img{
+  background-image: url('about-img.jpg');
+  height: 400px;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0% 5% 0% 5%;
+}
+
+.about-div .who-am-i{
+  color: #cbcbcb;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 5px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  word-spacing: 5px;
+  margin: 100px 0% 20px 5%;
+}
+
+.about-div .who-am-i span{
+  text-transform: lowercase;
+}
+
+.about-div .para-name{
+  font-size: 25px;
+  color: #ffffff;
+  background: #d6ac6b;
+  display: inline-block;
+  margin: 2px 0% 0% 5%;
+  padding: 5px 8px 10px 5px;
+  letter-spacing: 7px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-div .para-name span{
+  font-size: 30px;
+}
+
+.about-div .para-heading{
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: capitalize;
+  font-size: 10px;
+  margin: 40px 5% 0% 5%;
+}
+
+.about-div .about-para{
+  font-size: 8px;
+  margin: 30px 5% 0px 5%;
+  color: #a9a9a9;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 15px;
+}
+
+.about-div .follow{
+  color: #c5933c;
+  font-size: 12px;
+  margin: 40px 0px 0px 5%;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+}
+
+.about-div .oneline-items{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-div .line-follow{
+  width: 40px;
+  height: 0.5px;
+  background: #ffffff;
+  margin: 47px 15px 0px 15px;
+}
+
+.about-div .oneline-items i{
+  color: #ffffff;
+  margin: 40px 25px 0px 0px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.about-div .oneline-items i:hover{
+  color: #bd8949;
+}
+
+
+
+
+
+
+
+
+
+/* ########## section-two start ########## */
+ .section-two{
+  background: #101010;
+  padding: 0px 5% 20px 5%;
+}
+
+.section-two:hover .sec-heading{
+  color: #151515;
+  text-shadow: 0px 0px 1px #656565;
+}
+
+.sec-two-heading{
+  padding: 50px 0px 50px 0px;
+}
+
+.sec-heading:hover{
+  color: #151515;
+  text-shadow: 0px 0px 2px #656565;
+}
+
+.services{
+  background: #080808;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 10% 5%;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services h2{
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+
+.services p{
+  color: #818181;
+  font-size: 12px;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 23px;
+}
+
+.wrap-div{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.second-services{
+  margin-left: 50px;
+}
+.fourth-services{
+  margin-left: 50px;
+}
+
+
+
+.rotate-div{
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+  background: rgb(28,28,28);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transform: rotate(45deg);
+  transition: 0.3s ease;
+}
+
+.services i{
+  color: rgb(205,160,100);
+  font-size: 25px;
+  text-align: center;
+  transform: rotate(-45deg);
+  transition: 0.3s ease;
+}
+
+.services:hover .rotate-div{
+  transform: rotate(0deg);
+  background: rgb(205,160,100);
+}
+
+.services:hover .rotate-div i{
+  color: #fff;
+  transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* ####### third-section start  ######## */
+
+.third-section{
+  padding: 0% 5%;
+}
+
+
+.third-section .sec-heading{
+  padding: 50px 0px;
+}
+
+.third-section:hover .sec-three-heading{
+  color:#191919;
+  text-shadow: 0px 0px 1px #656565;
+}
+
+.blog-posts{
+  height: 300px;
+  max-width: 100%;
+  background-position: center;
+  margin: 0px 5% 20px 5%;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.position-div{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.position-div p{
+  color: #d8b264;
+  font-size: 12px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 120px;
+}
+
+.position-div h1{
+  color: #fff;
+  text-transform: capitalize;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  padding-top: 25px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  margin-left: 5px;
+}
+
+.position-div a{
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #c9ae76;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.position-div a:hover{
+  color: #dab885;
+}
+
+
+
+
+/*     blog post */
+
+
+.blog-post-one{
+  background-image: linear-gradient(to top, #000000, transparent), url('https://images.unsplash.com/photo-1664575197229-3bbebc281874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80');
+}
+.blog-post-two{
+  background-image: linear-gradient(to top, #000000, transparent), url('https://images.unsplash.com/photo-1562177049-e3a4ae99d149?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80');
+}
+
+
+
+
+
+@media only screen and (max-width: 800px){
+
+
+.about-div{
+  padding: 0px;
+}  
+  
+.about-img{
+  background-image: url('about-img.jpg');
+  height: 400px;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
+.blog-posts{
+  margin: 0px 2% 20px 2%;
+}
+
+.third-section{
+  padding: 0px;
+}
+
+.about-div .about-para{
+  font-size: 10px;
+  line-height: 25px;
+}
+
+.services p{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 23px;
+}
+
+.services h2{
+  font-size: 15px;
+}
+
+.services{
+  background: #080808;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 10% 5%;
+}
+
+.wrap-div{
+  display: block;
+  width: auto;
+}
+
+.second-services{
+  margin-left: 0px;
+}
+.fourth-services{
+  margin-left: 0px;
+}
+
+.section-one .animated-line{
+  padding: 5%;
+}
+
+.section-one .animated-line .web-development:before{
+  content: "";
+  position: absolute;
+  background: rgb(218,179,123);
+  width: 75%;
+  height: 8px;
+  transform-origin: left;
+  animation: animate 8s ease-in-out;
+  border-radius: 10px;
+}
+
+.section-one .animated-line .branding:before{
+  content: "";
+  position: absolute;
+  background: rgb(218,179,123);
+  width: 55%;
+  height: 8px;
+  transform-origin: left;
+  animation: animate 8s ease-in-out;
+  border-radius: 10px;
+}
+
+.section-one .animated-line .web-designing:before{
+  content: "";
+  position: absolute;
+  background: rgb(218,179,123);
+  width: 65%;
+  height: 8px;
+  transform-origin: left;
+  animation: animate 8s ease-in-out;
+  border-radius: 10px;
+}
+
+.about-div .para-heading{
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin: 40px 5% 0% 5%;
+}
+
+.about-div .who-am-i{
+  font-size: 10px;
+}
+}
+  
+</style>
+ 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">       <style>
+       
+         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+       </style>
+
+  </head>
+  <body>
+    
+      <header>
+        <nav>
+          
+            <div class="nav-main-div">
+                    <div class="left-nav">
+                        <h1>HpOrt</h1>
+                    </div>
+          
+                    <div class="right-nav">
+                      <div class="close-menu-items" id="close-menu" onclick="closeMenu()"></div>
+                      
+                      <div id="open-menu" class="openMenu" onclick="openMenu()">
+                        <div class="open-menu-items"></div>
+                        <div class="open-menu-items"></div>
+                        <div class="open-menu-items"></div>
+                      </div>
+                    </div> 
+            </div>
+            
+            <div class="menu-items">
+                <div class="nav-items" id="menuItems">
+                    <ul>
+                        <li><a href="#" onclick="closeMenu()">home</a></li>
+                        <li><a href="#about" onclick="closeMenu()">about</a></li>
+                        <li><a href="#services" onclick="closeMenu()">services</a></li>
+                        <li><a href="#our-blog" onclick="closeMenu()">blog</a></li>
+                        <li><a href="#" onclick="closeMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="main-div">
+                <h1>welcome!</h1>
+                <h2>I am <span>web developer</span></h2>
+
+              <div class="btn-div">
+                <a href="#">view work</a>
+                <a href="#">hire me!</a>
+              </div>
+        </div>
+
+      </header>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- #######  section 1 start  ####### -->
+    
+    
+      <section class="section-one" id="about">
+          <h1 class="sec-heading sec-one-heading">about me</h1>
+          
+          <div class="animated-line">
+            <p>development</p>
+            <div class="web-development"></div>
+            <p>branding</p>
+            <div class="branding"></div>
+            <p>web design</p>
+            <div class="web-designing"></div>
+          </div>
+          
+          <div class="about-div">
+            <div class="about-img"></div>
+          
+              <p class="who-am-i">who am <span>i</span></p>
+              <h1 class="para-name"><span>h</span>arsh kumar.</h1>
+              <h5 class="para-heading">professional web developer</h5>
+              <p class="about-para">As a web developer with expertise in HTML, CSS, and JavaScript, we are skilled in creating dynamic and interactive websites that are both visually appealing and user-friendly. Our understanding of these core technologies allows us to create clean and valid code that ensures cross-browser compatibility and optimal performance.</p>
+              <p class="about-para">We have experience working on a variety of projects, from small personal websites to large-scale enterprise applications. Our goal is always to deliver high-quality results that meet the specific needs and requirements of each project. Whether we are working with a client to bring their vision to life or developing our own unique ideas, we are dedicated to pushing the boundaries of what is possible with web development.</p>
+          
+          <div class="oneline-items">
+              <p class="follow">follow me :</p>
+              <div class="line-follow"></div>
+              
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/gamerharsh5500"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+          </div>
+          </div>
+          
+      </section>
+      
+      
+      
+      
+      
+
+      
+      
+<!--     ######## new section ########  -->
+      <section class="section-two" id="services">
+        <h1 class="sec-heading sec-two-heading">services</h1>
+        
+     <div class="wrap-div">
+       
+        <div class="first-services services">
+          <div class="rotate-div">
+          <i class="fa-sharp fa-solid fa-pencil"></i>
+          </div>
+          <h2 class="first-services-heading">web designing</h2>          
+          <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+        </div>
+        
+        <div class="second-services services">
+          <div class="rotate-div">
+          <i class="fa-solid fa-cube"></i>
+          </div>
+          <h2 class="second-services-heading">development</h2>
+          <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>          
+        </div>
+     </div>
+     <div class="wrap-div">
+       
+        <div class="third-services services">
+          <div class="rotate-div">
+          <i class="fa-solid fa-mountain"></i>
+          </div>
+          <h2 class="third-services-heading">branding</h2>
+          <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>          
+        </div>
+        
+        <div class="fourth-services services">
+          <div class="rotate-div">
+          <i class="fa-solid fa-chart-simple"></i>
+          </div>
+          <h2 class="fourth-services-heading">marketing</h2>
+          <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>          
+        </div>
+     </div>
+      </section>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<!--   ########## new blog section ########      -->  
+    <section id="our-blog" class="third-section">
+      
+      <h1 class="sec-heading sec-three-heading">our blog</h1>
+      
+      
+      
+      
+      
+     <!--       post 1     -->     
+      
+      <div class="blog-posts blog-post-one">
+        <div class="position-div">
+        <p>freelancer/ february 9 2024</p>
+        <h1>how to start freelancing</h1>
+        <a class="" href="#">read more</a>
+      </div>
+        </div>      
+        
+    <!--       post 2     -->
+        
+      <div class="blog-posts blog-post-two">
+        <div class="position-div">
+        <p>creater/ february 10 2023</p>
+        <h1>how to start vlogging</h1>
+        <a class="" href="#">read more</a>
+      </div>
+        </div>  
+        
+    <!--       post 3     -->
+        
+        
+        
+        
+        
+        
+        
+        
+    </section>
+      
+      
+      
+<script type="text/javascript" charset="utf-8">
+function openMenu(){
+  var a = document.getElementById('close-menu');
+  var b = document.getElementById('menuItems');
+  var c = document.getElementById('open-menu');
+  a.style.display = 'block';
+  b.style.height = '260px';
+  c.style.border = '2px solid #fff';
+}
+function closeMenu(){
+  var a = document.getElementById('open-menu');
+  var b = document.getElementById('close-menu');
+  var c = document.getElementById('menuItems');
+  var d = document.getElementById('open-menu');
+  a.style.display = 'block';
+  b.style.display = 'none';
+  c.style.height = '0px';
+  d.style.border = '0px solid #fff';
+}
+</script>
+    
+  </body>
+</html>
